@@ -1,4 +1,4 @@
-//const { formatPostcssSourceMap } = require("vite");
+const { formatPostcssSourceMap } = require("vite");
 
 function printMadLib() {
   var adj1=document.getElementById('adj1').value;
