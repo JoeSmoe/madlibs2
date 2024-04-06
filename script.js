@@ -13,7 +13,7 @@ function printMadLib() {
 
   // create JS object
   var storyData = {
-    timestamp: Date.now();
+    timestamp: Date.now(),
     story: story,
     adj1: adj1,
     noun1: noun1,
