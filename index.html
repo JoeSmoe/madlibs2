@@ -15,6 +15,8 @@
   <p>
     <form>
       <h2>Enter the following:</h2>
+      <label for="title">Madlib Title:</label>
+      <input type="text" id="title"><br>
       <label for="adj1">An adjective:</label>
       <input type="text" id="adj1"><br>
       <label for="adj2">An adjective:</label>
@@ -30,33 +32,13 @@
       <label for="noun4">A plural noun:</label>
       <input type="text" id="noun4"><br>
     </form>
-    <button onclick="printMadLib()">View MadLib</button>
+    <button onclick="createMadLib()">Create MadLib</button>
+    <button onclick="saveMadLib()">Save MadLib</button>
+    <button onclick="findMadLib()">Find MadLib</button>
+    <button onclick="editMadLib()">Edit MadLib</button>
+    <button onclick="deleteMadLib()">Delete MadLib</button>
   </p>
   <p id="output"></p>
-  <!-- JS for Firebase -->
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  // { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
-  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyDVlwQvpdETQ739pqmfL4x8ZXpdVVyKiLs",
-    authDomain: "madlibs-e9725.firebaseapp.com",
-    projectId: "madlibs-e9725",
-    storageBucket: "madlibs-e9725.appspot.com",
-    messagingSenderId: "234899162361",
-    appId: "1:234899162361:web:0363c0696b79db4bce8e28"
-  };
-
-  // Initialize Firebase
-  //const app = initializeApp(firebaseConfig);
-  const app = firebase.initializeApp(firebaseConfig);
-  var db = getFirestore(app);
-  console.log("firebase setup complete!");
-</script>
   <script src="script.js"></script>
 </body>
 </html>
